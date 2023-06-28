@@ -16,14 +16,14 @@ Then it will sequentially fine-tune the model on each dataset and save the resul
 The code uses 4 GPUs by default, one can change it in the `ai_nlp_benchmark.sh` script.
 The default per-device batch size is 32, can also be decreased if it is too large for the devices under evaluation.
 
-Every task shoudl take about 1-3 hours.
+Every task should take about 1-3 hours.
 
 ## Results
 The evaluation results can be found in the corresponding sub-directories (for example, `qnli_results/all_results.json`).
 
 The scores should not be significantly different from the following:
 
-- QQP:
-- MNLI:
-- QNLI: 0.92
+- QQP: accuracy 0.91, F1 0.88
+- MNLI: accuracy 0.87
+- QNLI: accuracy 0.92
 
