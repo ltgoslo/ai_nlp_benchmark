@@ -25,5 +25,5 @@ The scores should not be significantly different from the following:
 
 - QQP:
 - MNLI:
-- QNLI:
+- QNLI: 0.92
 
