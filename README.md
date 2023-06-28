@@ -2,7 +2,7 @@
 
 This is a simple script to quickly benchmark a multiple-GPU system on an NLP task.
 
-Specifically, it fine-tunes an English BERT-Large language model on three GLUE tasks:
+Specifically, it fine-tunes an English [BERT-Large](https://huggingface.co/bert-large-cased) language model on three [GLUE](https://gluebenchmark.com/) tasks:
 - QQP
 - MNLI
 - QNLI
