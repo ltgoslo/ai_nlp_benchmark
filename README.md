@@ -9,6 +9,8 @@ Specifically, it fine-tunes an English [BERT-Large](https://huggingface.co/bert-
 
 ## Instructions
 
+NB: run `accelerate config` if you did not use the `accelerate` library before and have just installed it.
+
 Simply run `ai_nlp_benchmark.sh`. It will automatically download the BERT model and the GLUE datasets.
 
 Then it will sequentially fine-tune the model on each dataset and save the resulting models and their evaluation results to corresponding sub-directories
