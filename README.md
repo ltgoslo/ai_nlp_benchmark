@@ -9,14 +9,12 @@ Specifically, it fine-tunes an English [BERT-Large](https://huggingface.co/bert-
 
 ## Instructions
 
-NB: run `accelerate config` if you did not use the `accelerate` library before and have just installed it.
-
 Simply run `ai_nlp_benchmark.sh`. It will automatically download the BERT model and the GLUE datasets.
 
 Then it will sequentially fine-tune the model on each dataset and save the resulting models and their evaluation results to corresponding sub-directories
 
-The code uses 4 GPUs by default, one can change it in the `ai_nlp_benchmark.sh` script.
-The default per-device batch size is 32, can also be decreased if it is too large for the devices under evaluation.
+The code uses 4 GPUs by default, one can change it in the `accelerate_config.yaml` file (`num_processes`).
+The default per-device batch size is 32, can be decreased (in the `ai_nlp_benchmark.sh` script) if it is too large for the devices under evaluation.
 
 Every task should take about 1-3 hours.
 
