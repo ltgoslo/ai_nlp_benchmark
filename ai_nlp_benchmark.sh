@@ -12,7 +12,7 @@ echo ${MODEL}
 for TASK_NAME in qqp mnli qnli
 do
     echo ${TASK_NAME}
-    accelerate launch --config_file accelerate_config.yaml glue_finetune.py \
+    accelerate launch --num_cpu_threads_per_process 16 --config_file accelerate_config.yaml glue_finetune.py \
     --model_name_or_path ${MODEL} \
     --task_name $TASK_NAME \
     --max_length 512 \

@@ -3,5 +3,4 @@
   "deepspeed_config": {},
   "distributed_type": "MULTI_GPU",
   "num_processes": 4,
-  "num_cpu_threads_per_process": 32,
 }
